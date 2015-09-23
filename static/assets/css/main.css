@@ -2162,7 +2162,8 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				height:700px;
+				background-image: url("../../images/harry.jpg");
 			}
 
 			#main > section.two {
