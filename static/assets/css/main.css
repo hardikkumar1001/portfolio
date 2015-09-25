@@ -8,6 +8,51 @@
 */
 
 /* Reset */
+/*
+.front
+{
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
+.back
+{
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
+.h_w_100
+{
+	height: 100%;
+	width: 100%;
+}
+*/
+
+.item  {
+	
+	/*width:240px; height:200px; margin:10px; float:left;  */
+}
+.item .front .image {
+	position:absolute;
+	width:240px; height:200px; border-radius: 7px;
+	transform: perspective( 1000px ) rotateX( 0deg );
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.item .back {
+	position:absolute;
+	background-color:white;
+	width:240px; height:200px; border-radius: 7px;
+	transform: perspective( 1000px ) rotateX( 180deg );
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.item:hover .front .image {
+	transform: perspective( 1000px ) rotateX( -180deg );
+}
+.item:hover .back{
+	transform: perspective( 1000px ) rotateX( 0deg );
+}`
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
